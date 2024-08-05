@@ -27,11 +27,10 @@ const adminlogin = async function(req, res, next) {
             throw new ApiError(401, 'Invalid admin email');
         }
 
-        // Add your login logic here (e.g., check password, generate token, etc.)
-
+     
         res.status(200).json({ message: 'Login successful', success: true });
     } catch (error) {
-        next(error); // Pass error to the next middleware
+        next(error); 
     }
 }
 
