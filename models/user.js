@@ -50,11 +50,11 @@ userSchema.methods = {
             // Compare hashed password with the plaintext  
             const isMatch = await bcrypt.compare(plainTextPassword, this.password);  
          //   console.log(this.password,plainTextPassword)
-            console.log(isMatch); // true if passwords match, false otherwise  
-            return isMatch; // Return the result of comparison  
+            console.log(isMatch);
+            return isMatch; 
         } catch (error) {  
             console.error('Error comparing passwords:', error);  
-            return false; // or throw the error based on your preference  
+            return false;  
         }  
     },
     generateAccessToken: function(){
