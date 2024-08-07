@@ -65,7 +65,7 @@ userSchema.methods = {
         email:this.email,
         fullName:this.fullName
         },
-        "SFDLKJDSF2345TRGFLJKJKHBJ786879JKNHURETJ444445654RENDKFNI34543",
+        process.env.ACCESS_TOKEN_SECRET,
         {
             expiresIn: "10d"
         }
@@ -76,7 +76,7 @@ userSchema.methods = {
         {
             _id: this._id,
         },
-        "SFDJKLAJKDSJ45N5NJKN435J5N4JK54N45JN5JKNJK5J4KBK4K3JB5KJ4B",
+        process.env.REFRESH_TOKEN_SECRET,
         {
             expiresIn: "1d"
         }
